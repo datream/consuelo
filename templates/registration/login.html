@@ -20,6 +20,7 @@
             <p>Please login to see this page.</p>
         {% endif %}
     {% endif %}
+
     <h1 style="text-align: center; margin-top: 5%">Login to Consuelo</h1>
     <form style="margin-left: 42%; margin-top: 5%" role="form" class="form-horizontal" method="post"
           action="{% url 'login' %}">
@@ -42,4 +43,5 @@
     </form>
 
     <p style="text-align: center; margin-top: 5%">New to Consuelo? <a href="{% url 'home' %}">Create Account.</a></p>
+
 {% endblock %}
