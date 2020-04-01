@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <meta name="Description" content="">
+
+    <title>Consuleo: A safe space for all your Thoughts</title>
+{% endblock %}
+
+{% block content %}
+    {% include "navbar.html" %}
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/backgroup.jpg' %});"
+             data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-end">
+                <div class="col-md-9 ftco-animate pb-5">
+                    <p class="breadcrumbs mb-2"><span class="mr-2"><a href="{% url 'home' %}">Home <i
+                            class="fa fa-chevron-right"></i></a></span> <span>Services <i
+                            class="fa fa-chevron-right"></i></span></p>
+                    <h1 class="mb-0 bread">Services</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 text-center heading-section ftco-animate">
+                    <span class="subheading">Services</span>
+                    <p>For therapy sessions with a doctor, make an appointment</p>
+                    <h2 class="mb-4">What is alternative therpay?</h2>
+                    <p>A health treatment that is not classified as standard Western medical practice is referred to as
+                        "alternative," or "complementary” or “integrative.” Integrative therapy encompasses a variety of
+                        disciplines that includes everything from diet and exercise to mental conditioning and lifestyle
+                        changes. Examples of integrative therapies include acupuncture, guided imagery, chiropractic
+                        treatments, yoga, hypnosis, biofeedback, aromatherapy, relaxation, herbal remedies, massage and
+                        many others.
+
+                        There is some evidence that holistic treatment is effective for depression. Using holistic
+                        psychotherapies can help patients go back to the source of the depression in their lives and
+                        learn effective ways of using tools to manage the symptoms and in many cases improve their
+                        overall functioning.</p>
+                </div>
+            </div>
+            <div class="row tabulation mt-4 ftco-animate">
+                <div class="col-md-4">
+                    <ul class="nav nav-pills nav-fill d-md-flex d-block flex-column">
+                        <li class="nav-item text-left">
+                            <a class="nav-link active py-4" data-toggle="tab" href="#services-1"><span
+                                    class="flaticon-chiropractic mr-2"></span> Yoga</a>
+                        </li>
+                        <li class="nav-item text-left">
+                            <a class="nav-link py-4" data-toggle="tab" href="#services-2"><span
+                                    class="flaticon-electrotherapy mr-2"></span> Accupuncture</a>
+                        </li>
+                        <li class="nav-item text-left">
+                            <a class="nav-link py-4" data-toggle="tab" href="#services-3"><span
+                                    class="flaticon-lymph-nodes mr-2"></span>Reflexology</a>
+                        </li>
+                        <li class="nav-item text-left">
+                            <a class="nav-link py-4" data-toggle="tab" href="#services-5"><span
+                                    class="flaticon-acupuncture mr-2"></span>Life Skills Workshops</a>
+                        </li>
+                        <li class="nav-item text-left">
+                            <a class="nav-link py-4" data-toggle="tab" href="#services-6"><span
+                                    class="flaticon-examination mr-2"></span> Pet Therapy</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <div class="tab-content">
+                        <div class="tab-pane container p-0 active" id="services-1">
+                            <div class="img" style="background-image: url({% static "images/work-2.jpg" %})"></div>
+                            <h3><a href="#">Yoga</a></h3>
+                            <p>Yoga “meets you where you are,” even when you are depressed. Practicing yoga teaches you
+                                breathing techniques that can help to energize you when you are feeling down or to help
+                                calm you at the times you may be feeling anxiety. The breath is the link between your
+                                mind and your body. Changing your breath can help you feel better mentally and
+                                physically. The postures and movements in yoga teach you how to hold your body in a way
+                                that can make you feel stronger, better able to breathe and function, and to create an
+                                improved sense of overall well-being.
+
+                            </p>
+                        </div>
+                        <div class="tab-pane container p-0 fade" id="services-2">
+                            <div class="img" style="background-image: url({% static "images/work-3.jpg" %})"></div>
+                            <h3><a href="#">Accupunture</a></h3>
+                            <p>
+                                Acupuncture is an ancient Chinese method of healing that prevents and cures specific
+                                diseases and conditions by sticking very fine, solid needles into specific points on the
+                                body. Acupuncture stimulates the body's ability to resist or overcome illness by
+                                correcting imbalances. It also prompts the body to produce chemicals that decrease or
+                                eliminate painful sensations.
+
+                                In a recent clinical study, acupuncture has been shown effective in decreasing
+                                depression at three months, compared to usual care. For people who suffer from both pain
+                                and depression, acupuncture is better than counseling and standard of care at reducing
+                                both symptoms. Acupuncture is highly effective at treating pain, such as headaches;
+                                menstrual cramps; and low back, neck, or muscle pain. It also can be used to treat
+                                menopausal symptoms, allergy symptoms, and side effects due to radiation and
+                                chemotherapy.
+                            </p>
+                        </div>
+                        <div class="tab-pane container p-0 fade" id="services-3">
+                            <div class="img" style="background-image: url({% static "images/work-4.jpg" %})"></div>
+                            <h3><a href="#">Reflexology</a></h3>
+                            <p>
+                                Reflexologists believe that the body has the capacity to heal itself. The nerves in the
+                                hands and feet are related to various parts of the body. Reflexologists believe that the
+                                healing process is stimulated by applying pressure to specific points on the hands and
+                                feet.
+                            </p>
+                        </div>
+
+                        <div class="tab-pane container p-0 fade" id="services-5">
+                            <div class="img" style="background-image: url({% static "images/work-6.jpg" %})"></div>
+                            <h3><a href="#">Life Skills Workshop</a></h3>
+                            <p>
+                                Life Skills Workshops are a primary way that we deliver timely and useful services to
+                                current clients of our Center. These educational experiences help participants learn
+                                coping skills for managing stress, negative moods, and relationships
+                            </p>
+
+                        </div>
+                        <div class="tab-pane container p-0 fade" id="services-6">
+                            <div class="img" style="background-image: url({% static "images/work-1.jpg" %});"></div>
+                            <h3><a href="#">Pet Therapy</a></h3>
+                            <p>
+                                Reflexologists believe that the body has the capacity to heal itself. The nerves in the
+                                hands and feet are related to various parts of the body. Reflexologists believe that the
+                                healing process is stimulated by applying pressure to specific points on the hands and
+                                feet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

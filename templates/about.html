@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <meta name="Description" content="">
+
+    <title>Consuleo: A safe space for all your Thoughts</title>
+{% endblock %}
+
+{% block content %}
+    {% include "navbar.html" %}
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/backgroup.jpg' %});"
+             data-stellar-background-ratio="0.75">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-end">
+                <div class="col-md-9 ftco-animate pb-5">
+                    <p class="breadcrumbs mb-2"><span class="mr-2"><a href="{% url 'home' %}">Home <i
+                            class="fa fa-chevron-right"></i></a></span> <span>About us <i
+                            class="fa fa-chevron-right"></i></span></p>
+                    <h1 class="mb-0 bread">About Us</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <div class="col-md-6 d-flex order-md-last">
+                </div>
+            </div>
+            <div class="col-md-6 pr-md-5 py-md-5">
+                <div class="row justify-content-start py-5">
+                    <div class="col-md-12 heading-section ftco-animate">
+                        <span class="subheading">Hope you leave from here with a better mental space :)</span>
+                        <h2 class="mb-4">About CONSUELO</h2>
+                        <p>We believe that the mind and the body, both should be respected as much. There are tons of
+                            places out there than can help you fix your body. What about your brain? We want to create a
+                            safe space over here for you and your mind. </p>
+                    </div>
+                </div>
+                <div class="row ftco-counter pb-5" id="section-counter">
+                    <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18">
+                            <div class="text">
+                                <strong class="number" data-number="3">0</strong>
+                            </div>
+                            <div class="text">
+                                <span>Years of <br>Experienced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18">
+                            <div class="text">
+                                <strong class="number" data-number="232">0</strong>
+                            </div>
+                            <div class="text">
+                                <span>Happy <br>Customers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-section testimony-section bg-dark">
+        <div class="container">
+            <div class="row justify-content-center pb-5 mb-3">
+                <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
+                    <span class="subheading">Testimonies</span>
+                    <h2>Happy Clients &amp; Feedbacks</h2>
+                </div>
+            </div>
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel ftco-owl">
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="fa fa-quote-left"></span></div>
+                                <div class="text">
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img"
+                                             style="background-image: url({% static "images/person_1.jpg" %})"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Datream</p>
+                                            <span class="position"></span>
+                                            <p>These guys are extremely helpful. I have been able to manage my anxiety
+                                                much better with cryotherapy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="fa fa-quote-left"></span></div>
+                                <div class="text">
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img"
+                                             style="background-image: url({% static "images/person_2.jpg" %})"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Chaitanya</p>
+                                            <span class="position"> </span>
+                                            <p>I never thought yoga will help me with my depressive episodes but here I
+                                                am! A yoga fanatic.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="fa fa-quote-left"></span></div>
+                                <div class="text">
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img"
+                                             style="background-image: url({% static "images/person_1.jpg" %})"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Sanjana</p>
+                                            <span class="position"></span>
+                                            <p>I was too scared to seek professional help. I am now in therapy and
+                                                learning to deal with my bipolar disorder in a better way every
+                                                day. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="fa fa-quote-left"></span></div>
+                                <div class="text">
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img"
+                                             style="background-image: url({% static "images/person_2.jpg" %})"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Tikkas</p>
+                                            <span class="position">Marketing Manager</span>
+                                            <p>I am dealing with my PTSD. I am in CBT and simultaneously practicing cold
+                                                water therapy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

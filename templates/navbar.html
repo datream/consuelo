@@ -1,16 +1,30 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Consuelo</a>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light">
+    <a style="margin-left: 2%" class="navbar-brand" href="{% url 'home' %}">Consuelo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span> Menu
     </button>
     <div id="navbarNavDropdown" class="navbar-collapse collapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Traditional Therapy</a>
+                    <a class="dropdown-item" href="#">Pet therapy</a>
+                    <a class="dropdown-item" href="#">Yoga Therapy</a>
+                    <a class="dropdown-item" href="#">Life Skills Workshop</a>
+                    <a class="dropdown-item" href="#">Accupunture</a>
+                    <a class="dropdown-item" href="#">Reflexology</a>
+                </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="{% url "about" %}">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url "contact" %}">Contact</a>
             </li>
         </ul>
 

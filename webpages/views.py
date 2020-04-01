@@ -14,6 +14,33 @@ def home_view(request, *args, **kwargs):
     return render(request, "index.html", context)
 
 
+def about_view(request, *args, **kwargs):
+    context = {
+        "authenticated": request.user.is_authenticated,
+        "user": request.user,
+    }
+
+    return render(request, "about.html", context)
+
+
+def services_view(request, *args, **kwargs):
+    context = {
+        "authenticated": request.user.is_authenticated,
+        "user": request.user,
+    }
+
+    return render(request, "services.html", context)
+
+
+def contact_view(request, *args, **kwargs):
+    context = {
+        "authenticated": request.user.is_authenticated,
+        "user": request.user,
+    }
+
+    return render(request, "contact.html", context)
+
+
 def register_view(request):
     if request.user.is_authenticated:
         return redirect('home')
