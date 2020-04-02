@@ -7,15 +7,7 @@
 {% endblock %}
 
 {% block content %}
-
-    {% if next %}
-        {% if user.is_authenticated %}
-            <p>Your account doesn't have access to this page. To proceed,
-                please login with an account that has access.</p>
-        {% else %}
-            <p>Please login to see this page.</p>
-        {% endif %}
-    {% endif %}
+    {% include 'navbar.html' %}
 
     <h1 style="text-align: center; margin-top: 5%">Create your own account</h1>
     <form style="width:80%; margin-left:10%; margin-top: 5%" role="form" class="form-horizontal" method="post">

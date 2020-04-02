@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from webpages.forms import CustomUserCreationForm
+from webpages.forms import CustomUserCreationForm, CustomUserUpdationForm
 
 
 def home_view(request, *args, **kwargs):
@@ -56,3 +56,18 @@ def register_view(request):
             form = CustomUserCreationForm()
 
         return render(request, 'registration/signup.html', {'form': form})
+
+
+def settings_view(request):
+    if request.user.is_anonymous:
+        return redirect('home')
+    else:
+        if request.method == 'POST':
+            form = CustomUserUpdationForm(request.POST)
+            if form.is_valid():
+                form.save(request.user)
+
+        else:
+            form = CustomUserUpdationForm()
+
+        return render(request, 'registration/settings.html', {'form': form})

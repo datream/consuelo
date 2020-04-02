@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <meta name="Description" content="">
+
+    <title>Consuleo: A safe space for all your Thoughts</title>
+{% endblock %}
+
+{% block content %}
+    {% include "navbar.html" %}
+
+    <form style="width:80%; margin-left:10%; margin-top: 5%" role="form" class="form-horizontal" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.email.label_tag }}
+            {{ form.email }}
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                {{ form.first_name.label_tag }}
+                {{ form.first_name }}
+            </div>
+            <div class="form-group col-md-6">
+                {{ form.last_name.label_tag }}
+                {{ form.last_name }}
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                {{ form.password1.label_tag }}
+                {{ form.password1 }}
+            </div>
+            <div class="form-group col-md-6">
+                {{ form.password2.label_tag }}
+                {{ form.password2 }}
+            </div>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Save Settings"/>
+    </form><br>
+
+{% endblock %}

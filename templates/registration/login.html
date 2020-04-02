@@ -7,18 +7,10 @@
 {% endblock %}
 
 {% block content %}
+    {% include 'navbar.html' %}
 
     {% if form.errors %}
-        <p>Your username and password didn't match. Please try again.</p>
-    {% endif %}
-
-    {% if next %}
-        {% if user.is_authenticated %}
-            <p>Your account doesn't have access to this page. To proceed,
-                please login with an account that has access.</p>
-        {% else %}
-            <p>Please login to see this page.</p>
-        {% endif %}
+        <script>alert("Your username and password didn't match. Please try again.")</script>
     {% endif %}
 
     <h1 style="text-align: center; margin-top: 5%">Login to Consuelo</h1>
@@ -30,8 +22,7 @@
             {{ form.username }}
         </div>
         <div class="form-group">
-            {{ form.password.label_tag }}
-            <a style="margin-left: 2%" href="{% url 'password_reset' %}">Lost password?</a><br>
+            {{ form.password.label_tag }}<br>
             {{ form.password }}
         </div>
         <div class="form-check">
@@ -42,6 +33,6 @@
         <input type="hidden" name="next" value="{{ next }}"/>
     </form>
 
-    <p style="text-align: center; margin-top: 5%">New to Consuelo? <a href="{% url 'home' %}">Create Account.</a></p>
+    <p style="text-align: center; margin-top: 5%">New to Consuelo? <a href="{% url 'signup' %}">Create Account.</a></p>
 
 {% endblock %}
