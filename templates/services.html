@@ -77,13 +77,14 @@
                     <div class="tab-content">
                         <div class="tab-pane container p-0 active" id="services-1">
                             <div class="img" style="background-image: url({% static "images/work-6.jpg" %})"></div>
-                            <h3><a href="#">Traditional Therapy</a></h3>
+                            <h3><a href="{% url 'traditional_therapy' %}">Traditional Therapy</a></h3>
                             <p>
                                 Traditional Therapy consists of communicating with a counsellor or a psychologist either
                                 at a clinic or online to combat various mental health issues. At the end of a session, a
                                 psychologist may also prescribe some medicine for a faster recovery.
                             </p>
-                            <a href="#" class="btn btn-primary" role="button" target="blank">Click</a>
+                            <a href="{% url 'traditional_therapy' %}" class="btn btn-primary" role="button"
+                               target="blank">Click</a>
                         </div>
 
                         <div class="tab-pane container p-0 fade" id="services-2">

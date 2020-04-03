@@ -13,7 +13,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{% url "services" %}">All Servicees</a>
-                    <a class="dropdown-item" href="#">Traditional Therapy</a>
+                    <a class="dropdown-item" href="{% url 'traditional_therapy' %}">Traditional Therapy</a>
                     <a class="dropdown-item" href="http://www.animalangelsfoundation.com/">Pet Therapy</a>
                     <a class="dropdown-item" href="https://theyogainstitute.org/">Yoga Therapy</a>
                     <a class="dropdown-item" href="http://www.animalangelsfoundation.com/">Life Skills Workshop</a>
@@ -50,7 +50,7 @@
                         {{ user }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Bookings</a>
+                        <a class="dropdown-item" href="{% url 'bookings' %}">Bookings</a>
                         <a class="dropdown-item" href="{% url 'settings' %}">Settings</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>

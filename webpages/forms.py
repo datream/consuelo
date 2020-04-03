@@ -74,15 +74,14 @@ class CustomUserUpdationForm(CustomUserForm):
 
     def save(self, username, commit=True):
         user = username
-        print("*********** User:", user, end="***********\n")
 
-        if self.cleaned_data['email'] is not "":
+        if self.cleaned_data['email'] != "":
             user.email = self.cleaned_data['email']
 
-        if self.cleaned_data['first_name'] is not "":
+        if self.cleaned_data['first_name'] != "":
             user.first_name = self.cleaned_data['first_name']
 
-        if self.cleaned_data['last_name'] is not "":
+        if self.cleaned_data['last_name'] != "":
             user.last_name = self.cleaned_data['last_name']
 
         if self.cleaned_data['password1'] != "" and self.cleaned_data['password2'] != "":
